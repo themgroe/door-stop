@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/bubble">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="10dp"
+        android:text="Welcome to the StiffArm family! Please ensure that Bluetooth is turned ON and location services are allowed for this App."
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/okay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:text=" Continue"
+            android:background="@drawable/capsule"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/cancel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/okay_text"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/capsule"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
