@@ -9,7 +9,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    tools:ignore="HardcodedText">
 
     <!-- AppBar layout for using Toolbar as AppBar -->
     <com.google.android.material.appbar.AppBarLayout
@@ -43,7 +42,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/toolbar"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_home_36"
+                app:srcCompat="@drawable/twotone_home_24"
                 android:background="@color/dark_red"
                 tools:ignore="MissingConstraints" />
 
@@ -84,7 +83,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/toolbar"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_settings_36"
+                app:srcCompat="@drawable/twotone_settings_24"
                 android:background="@color/dark_red"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -149,12 +148,19 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/bottombar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="58dp"
                 android:background="@color/white"
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            <!--android:layout_height="?attr/actionBarSize"-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="#A8000000" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -166,11 +172,12 @@
                     android:id="@+id/button_user"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"
-                    android:layout_height="72dp"
+                    android:layout_height="56dp"
                     android:layout_marginStart="10dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    app:srcCompat="@drawable/ic_person_36"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/twotone_person_24"
                     android:background="@color/white"
                     tools:ignore="MissingConstraints" />
 
@@ -181,9 +188,10 @@
                     android:layout_height="56dp"
                     android:layout_toRightOf="@id/button_user"
                     android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
                     android:layout_marginLeft="16dp"
                     android:background="@color/white"
-                    app:srcCompat="@drawable/ic_add_36" />
+                    app:srcCompat="@drawable/twotone_add_circle_24" />
 
                 <ImageButton
                     android:id="@+id/button_web"
@@ -192,9 +200,10 @@
                     android:layout_height="56dp"
                     android:layout_toRightOf="@id/button_add"
                     android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
                     android:layout_marginLeft="16dp"
                     android:background="@color/white"
-                    app:srcCompat="@drawable/ic_website_36" />
+                    app:srcCompat="@drawable/baseline_security_24" />
 
                 <ImageButton
                     android:id="@+id/button_send"
@@ -203,9 +212,12 @@
                     android:layout_height="56dp"
                     android:layout_toRightOf="@id/button_web"
                     android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
                     android:layout_marginLeft="16dp"
                     android:background="@color/white"
-                    app:srcCompat="@drawable/ic_sendkey_36" />
+                    app:srcCompat="@drawable/ic_sendkey_24"/>
+
+                <!--app:srcCompat="@drawable/send_icon"-->
 
             </LinearLayout>
 
